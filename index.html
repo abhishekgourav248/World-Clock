@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <img src="./assets/background.jpg" alt="" class="background"> -->
+    <div class="main_container">
+        <div class="header_body">
+            <h1 class="header">World Clock</h1>
+        </div>
+    
+        <div class="city_body">
+            <div class="city" id="city">India</div>
+            <div class="container">
+                <div class="icon">
+                    <img src="./assets/location-pointer.png" alt="">
+                </div>
+                <div class="latlong" id="latlong">20.593684,78.96288</div>
+            </div>
+            
+        </div>
+    
+        <div class="time" id ="time">
+        </div>
+    
+        <div class="select-city">
+            <select id="cities" name="cities" id="" onchange="updateLatLong()">
+            </select>
+        </div>
+
+        <div class="add_city">
+            <select id="cities" name="cities" id="" onchange="updateLatLong()">
+            </select>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./script.js"></script>
